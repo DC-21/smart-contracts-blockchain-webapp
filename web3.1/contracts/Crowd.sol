@@ -45,11 +45,19 @@ contract Crowd {
             campaign.donators.push(msg.sender);
             campaign.donators.push(amount);
 
-            (bool sent) = payable(campaign.owner).call{value: amount}("")
+            (bool sent) = payable(campaign.owner).call{value: amount}("");
+
+            if(sent,) {
+                campaign.amountCollected = campaign.amountCollected + amount;
+            }
         }
 
-        function getDonators() {}
+        function getDonators(uint256 _id)view public return(address[] memory, uint256[] memory) {
+            return(campaigns[_id].donators, campaign[_id].donators);
+        }
 
-        function getCampaigns() {}
+        function getCampaigns()public view returns(campaign[] memory) {
+            Campaign[] memory allCampaigns = new Campaign[](numberOfCampaigns);
+        }
     }
 }
