@@ -16,5 +16,15 @@ contract Crowd {
         }
 
         mapping(uint256 => Campaign) public Campaigns;
+
+        uint256 public numberOfCampaigns = 0;
+
+        function createCampaign() {}
+
+        function donateToVideo() {}
+
+        function getDonators() {}
+
+        function getCampaigns() {}
     }
 }
