@@ -37,7 +37,16 @@ contract Crowd {
             return numberOfCampaigns - 1;
         }
 
-        function donateToVideo() {}
+        function donateToVideo(uint256 _id) public payable {
+            uint256 amount = msg.value;
+
+            campaign storage campaign = campaigns[_id];
+
+            campaign.donators.push(msg.sender);
+            campaign.donators.push(amount);
+
+            (bool sent) = payable(campaign.owner).call{value: amount}("")
+        }
 
         function getDonators() {}
 
