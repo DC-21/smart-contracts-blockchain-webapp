@@ -19,7 +19,19 @@ contract Crowd {
 
         uint256 public numberOfCampaigns = 0;
 
-        function createCampaign() {}
+        function createCampaign(address _owner, string memory _title, string memory _description, uint256 _target, uint256 _deadline, string memory _image) public returns (uint256) {
+            Campaign storage campaign = campaigns[numberOfCampaigns];
+
+            require(campaign.deadline < block.timestamp, "The deadline should be date in the future.");
+
+            campaign.owner = owner;
+            campaign.title = title;
+            campaign.description = description;
+            campaign.target = target;
+            campaign.deadline = deadline;
+            campaign.amountCollected = 0;
+            campaign.image = _image;
+        }
 
         function donateToVideo() {}
 
