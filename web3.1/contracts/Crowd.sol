@@ -56,8 +56,15 @@ contract Crowd {
             return(campaigns[_id].donators, campaign[_id].donators);
         }
 
-        function getCampaigns()public view returns(campaign[] memory) {
+        function getCampaigns()public view returns(Campaign[] memory) {
             Campaign[] memory allCampaigns = new Campaign[](numberOfCampaigns);
+
+            for(uint i=0; i< numberOfCampaigns; i++) {
+                Campaign storage item = campaign[i];
+
+                allCampaigns[i] = item;
+            }
+            return allCampaigns;
         }
     }
 }
