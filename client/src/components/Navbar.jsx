@@ -4,9 +4,9 @@ import logo from '../images/dice.png';
 const Navbar = () => {
     return (
         <div className='top-4 pt-4 w-full h-20'>
-            <div className='flex py-3 px-2 w-full justify-between items-center'>
+            <div className='flex py-3 ml-2 mr-2 rounded justify-between items-center  bg-[#0e0e10]'>
                 <div className='flex items-center justify-center gap-8'>
-                    <div className="w-14 h-4 flex justify-center items-center ml-1">
+                    <div className="w-14 h-4 flex justify-center items-center ml-2">
                         <img className='rounded' src={logo} alt='logo' />
                     </div>
                     <div className='flex justify-center items-center'>
