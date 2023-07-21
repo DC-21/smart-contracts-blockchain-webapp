@@ -9,7 +9,7 @@ const Navbar = () => {
                     <div className="w-14 h-4 flex justify-center items-center ml-1">
                         <img className='rounded' src={logo} alt='logo' />
                     </div>
-                    <div className='flex'>
+                    <div className='flex bg-[#0e0e10] justify-center'>
                         <input
                             type='text'
                             placeholder='search' />
