@@ -10,10 +10,13 @@ const Navbar = () => {
                 </div>
                 <div className="grow h-4 flex justify-center items-center">
                     <input
-                    type='text'
-                    placeholder='search'
-                    className='h-8 text-center'
+                        type='text'
+                        placeholder='search'
+                        className='h-8 text-center rounded-full'
                     />
+                    <a className='absolute'>
+                        <ion-icon name="search-outline"></ion-icon>
+                    </a>
                 </div>
                 <div className="grow h-4 flex justify-center items-center">
                     02
