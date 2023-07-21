@@ -8,13 +8,13 @@ const Navbar = () => {
                 <div className="flex-none w-14 h-4 flex justify-center items-center ml-1">
                     <img className='rounded' src={logo} alt='logo' />
                 </div>
-                <div className="grow h-4 flex justify-center items-center">
+                <div className="grow h-4 flex justify-center items-center bg-[#172554]">
                     <input
                         type='text'
                         placeholder='search'
-                        className='h-8 text-center rounded-full'
+                        className='h-9'
                     />
-                    <a className='absolute'>
+                    <a className='rounded-full bg-[#0e0e10] w-14'>
                         <ion-icon name="search-outline"></ion-icon>
                     </a>
                 </div>
