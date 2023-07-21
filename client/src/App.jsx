@@ -3,7 +3,7 @@ import Sidebar from './components/Sidebar'
 
 const App = () => {
   return (
-    <div className='bg-blue-300'>
+    <div className='h-screen w-full bg-blue-950'>
       <Sidebar/>
     </div>
   )
