@@ -3,7 +3,7 @@ import logo from '../images/dice.png';
 
 const Navbar = () => {
     return (
-        <div className='top-4 pt-2 w-full h-20'>
+        <div className='top-0 pt-2 w-full h-20 sticky'>
             <div className='flex py-4 ml-2 mr-2 rounded-lg justify-between items-center  bg-[#091794]'>
                 <div className='flex items-center justify-center gap-8'>
                     <div className="w-14 h-4 flex justify-center items-center ml-2">
