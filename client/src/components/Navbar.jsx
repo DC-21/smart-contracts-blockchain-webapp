@@ -18,7 +18,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex items-center justify-center gap-8'>
                     <div className='flex items-center'>
-                        <button className='bg-[#172554] text-white'>Connect</button>
+                        <button className='bg-[#172554] text-white py-2 px-2'>Connect</button>
                     </div>
                     <div className="flex-none w-14 flex justify-center items-center">
                         <ion-icon name="logo-firefox"></ion-icon>
