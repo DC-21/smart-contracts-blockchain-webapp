@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <div className='h-screen w-full bg-[#a4a4d6]'>
+    <div className='h-screen w-full bg-[#030b29]'>
       <Navbar/>
       <Sidebar/>
     </div>

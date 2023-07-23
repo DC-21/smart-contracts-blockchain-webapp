@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = () => {
     return (
-        <div className='w-16 rounded-lg pt-4 pb-4 flex flex-col justify-between fixed bottom-6 left-2 h-[540px] bg-[#0e0e10]'>
+        <div className='w-16 rounded-lg pt-4 pb-4 flex flex-col justify-between fixed bottom-6 left-2 h-[540px] bg-[#0f0e10]'>
             <div className='w-full h-full flex gap-3 top-0 flex-col'>
                 <a className='flex justify-center'>
                     <ion-icon name="grid-outline"></ion-icon>
