@@ -12,7 +12,7 @@ const Navbar = () => {
                     <div className='flex justify-center items-center'>
                         <input
                             type='text'
-                            className='rounded-lg border border-[#a4a4d6] h-9 bg-[#3d5297] text-center items-center justify-center'
+                            className='rounded-full border border-[#a4a4d6] h-9 bg-[#3d5297] text-center items-center justify-center'
                             placeholder='search' />
                     </div>
                 </div>
