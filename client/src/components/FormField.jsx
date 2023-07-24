@@ -11,6 +11,7 @@ const FormField = ({ labelName, placeholder, inputType, isTextArea, value, handl
         type={inputType}
         rows={10}
         placeholder={placeholder}
+        onChange={handleChange}
         className='py-[15px] px-[15px] sm:px-[25px] rounded-[5px] sm:min-w-[886px]'
         />
         ):(<input
@@ -19,6 +20,7 @@ const FormField = ({ labelName, placeholder, inputType, isTextArea, value, handl
         type={inputType}
         steps='0.1'
         placeholder={placeholder}
+        onChange={handleChange}
         className='py-[15px] px-[15px] sm:px-[25px] rounded-[5px] sm:min-w-[300px]'
         />)}
     </label>
