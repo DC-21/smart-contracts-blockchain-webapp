@@ -3,6 +3,10 @@ import logo from '../images/dice.png';
 
 const Navbar = () => {
 
+    const [open, setOpen] = useState(false);
+    const handleMenu =()=>{
+        setOpen(!open);
+    };
 
     return (
         <div className='top-0 pt-2 w-full h-20 sticky'>
@@ -26,7 +30,7 @@ const Navbar = () => {
                         <ion-icon name="logo-firefox"></ion-icon>
                     </div>
                 </div>
-                <a className='md:hidden absolute justify-end pr-6 cursor-pointer flex w-full'>
+                <a className='md:hidden absolute justify-end pr-6 cursor-pointer flex w-full' onClick={handleMenu}>
                 <ion-icon size="larger" name="menu-outline"></ion-icon>
                 </a>
             </div>
