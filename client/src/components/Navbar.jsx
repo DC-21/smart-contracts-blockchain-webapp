@@ -32,7 +32,7 @@ const Navbar = () => {
                 </div>
                 <a className='md:hidden absolute justify-end pr-6 cursor-pointer flex w-full' onClick={handleMenu}>
                     {open ? (<ion-icon name="close-circle-outline"></ion-icon>) : (<ion-icon size="larger" name="menu-outline"></ion-icon>)}
-                    {open ? (<div className='w-[200px] rounded-lg pt-4 top-14 pb-2 md:hidden flex flex-col justify-between fixed right-2 h-[310px] bg-[#06123d] shadow-2xl shadow-black '>
+                    {open ? (<div className='w-[200px] rounded-lg pt-4 top-14 pb-2 md:hidden flex flex-col justify-between fixed right-2 h-[350px] bg-[#06123d] shadow-2xl shadow-black '>
                         <div className='w-full h-full flex gap-3 top-0 flex-col'>
                             <a className='flex gap-3 justify-start pl-4'>
                                 <ion-icon size="large" name="grid-outline"></ion-icon>
@@ -58,6 +58,9 @@ const Navbar = () => {
                                 <ion-icon name="log-out-outline"></ion-icon>
                                 <p className='text-white text-[18px]'>Logout</p>
                             </a>
+                            <div className='flex w-full justify-start pl-1'>
+                                <button className='bg-[#172554] w-full text-white py-2 rounded-md px-2 border border-[#a4a4d6]'>Connect</button>
+                            </div>
                         </div>
                     </div>) : null}
                 </a>
