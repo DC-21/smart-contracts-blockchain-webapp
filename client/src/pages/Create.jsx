@@ -14,6 +14,7 @@ const Create = () => {
     deadline: '',
     image: ''
   });
+  const handleSubmit =()=>{}
   return (
     <div className='justify-center items-center flex flex-col rounded-[10px] w-full h-auto bg-[#101b42]'>
       {isLoading && 'Loader...'}
@@ -75,6 +76,11 @@ const Create = () => {
             value={form.deadline}
             handleChange={() => { }}
           />
+        </div>
+        <div className='justify-center w-full flex items-center'>
+          <a className='gap-4 bg-[#374674] flex justify-center items-center p-4 rounded-[10px]'>
+            <p className='font-bold text-[28px] text-white'>Submit new campaign</p>
+          </a>
         </div>
       </form>
     </div>
