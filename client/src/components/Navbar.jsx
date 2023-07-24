@@ -24,7 +24,7 @@ const Navbar = () => {
                 </div>
                 <div className='md:flex hidden items-center justify-center gap-8'>
                     <div className='flex items-center'>
-                        <button className='bg-[#172554] text-white py-2 rounded-md px-2 border border-[#a4a4d6]'>Connect</button>
+                        <button className='bg-[#172554] text-white py-2 rounded-md px-2 border border-[#a4a4d6]'>Create Campaign</button>
                     </div>
                     <div className="flex-none w-14 flex justify-center  items-center">
                         <ion-icon name="logo-firefox"></ion-icon>
@@ -59,7 +59,7 @@ const Navbar = () => {
                                 <p className='text-white text-[18px]'>Logout</p>
                             </a>
                             <div className='flex w-full justify-start pl-1'>
-                                <button className='bg-[#172554] w-full text-white py-2 rounded-md px-2 border border-[#a4a4d6]'>Connect</button>
+                                <button className='bg-[#172554] w-full text-white py-2 rounded-md px-2 border border-[#a4a4d6]'>Create Campaign</button>
                             </div>
                         </div>
                     </div>) : null}
