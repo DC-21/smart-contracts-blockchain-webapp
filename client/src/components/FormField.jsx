@@ -12,7 +12,7 @@ const FormField = ({ labelName, placeholder, inputType, isTextArea, value, handl
         rows={10}
         placeholder={placeholder}
         onChange={handleChange}
-        className='py-[15px] px-[15px] sm:px-[25px] rounded-[5px] sm:min-w-[886px]'
+        className='py-[15px] px-[15px] sm:px-[25px] rounded-[5px] md:w-[886px] md:min-w-[800px] sm:min-w-[300px]'
         />
         ):(<input
         required
