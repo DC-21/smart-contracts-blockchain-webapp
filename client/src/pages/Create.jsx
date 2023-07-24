@@ -37,7 +37,7 @@ const Create = () => {
             placeholder='Write title for campaign'
             inputType='text'
             value={form.title}
-            handleChange={() => { }}
+            handleChange={(e) => handleFieldFormChange('title',e)}
           />
         </div>
         <div className='flex w-full'>
@@ -46,7 +46,7 @@ const Create = () => {
             placeholder='Write title story'
             isTextArea
             value={form.description}
-            handleChange={() => { }}
+            handleChange={(e) => handleFieldFormChange('description',e)}
           />
         </div>
         <div className='justify-center w-full flex items-center'>
@@ -69,14 +69,14 @@ const Create = () => {
             placeholder='ETH 0.5'
             inputType='text'
             value={form.target}
-            handleChange={() => { }}
+            handleChange={(e) =>  handleFieldFormChange('target',e)}
           />
           <FormField
             labelName='End Date *'
             placeholder='End Date'
             inputType='date'
             value={form.deadline}
-            handleChange={() => { }}
+            handleChange={(e) => handleFieldFormChange('deadline',e)}
           />
         </div>
         <div className='justify-center w-full flex items-center'>
