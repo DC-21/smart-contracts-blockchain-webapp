@@ -13,7 +13,9 @@ const Create = () => {
     target: '',
     deadline: '',
     image: ''
-  });
+  }); const handleFieldFormChange = (fieldName,e)=>{
+    setForm({...form,[fieldName]:e.target.value})
+  }
   const handleSubmit =()=>{}
   return (
     <div className='justify-center items-center flex flex-col rounded-[10px] w-full h-auto bg-[#101b42]'>
@@ -28,7 +30,7 @@ const Create = () => {
             placeholder='chola kuboko'
             inputType='text'
             value={form.name}
-            handleChange={() => { }}
+            handleChange={(e) => handleFieldFormChange('name',e)}
           />
           <FormField
             labelName='Campaign Title *'
