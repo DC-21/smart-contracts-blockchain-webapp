@@ -27,7 +27,7 @@ const Navbar = () => {
                         <ion-icon name="logo-firefox"></ion-icon>
                     </div>
                 </div>
-                <a className='md:hidden absolute justify-end pr-6 cursor-pointer flex w-full' onClick={handleMenu}>
+                <a className='md:hidden absolute justify-end pr-6 top-4 cursor-pointer flex w-full' onClick={handleMenu}>
                     {open ? (<ion-icon name="close-circle-outline"></ion-icon>) : (<ion-icon size="larger" name="menu-outline"></ion-icon>)}
                     {open ? (<div className='w-[200px] rounded-lg pt-4 top-14 pb-2 md:hidden flex flex-col justify-between fixed right-2 h-[350px] bg-[#06123d] shadow-2xl shadow-black '>
                         <div className='w-full h-full flex gap-3 top-0 flex-col'>
