@@ -4,6 +4,9 @@ import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Create from './pages/Create';
+import Profile from './pages/Profile'
+import Payment from './pages/Payment'
+import Withdraw from './pages/Withdraw'
 
 const App = () => {
   return (
@@ -13,7 +16,11 @@ const App = () => {
         <Sidebar />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/payment' element={<Payment />} />
+          <Route path='/withdraw' element={<Withdraw />} />
+          <Route path='/profile' element={<Profile />} />
           <Route path='/create-campaign' element={<Create/>}/>
+          <Route path='/campaign-details' element={<campaignDetails/>}/>
         </Routes>
       </div>
     </div>
