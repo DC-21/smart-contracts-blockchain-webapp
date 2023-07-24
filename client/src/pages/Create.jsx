@@ -21,7 +21,7 @@ const Create = () => {
         <h1 className='text-white font-bold leading-[30px] md:text-[35px] sm:text-[16px]'>Start a Campaign</h1>
       </div>
       <form className='w-full flex flex-col mt-6 mb-6 gap-4'>
-        <div className='flex flex-wrap gap-4'>
+        <div className='flex flex-wrap gap-0'>
           <FormField
           labelName='Your Name *'
           placeholder='chola kuboko'
@@ -37,13 +37,15 @@ const Create = () => {
           handleChange={()=>{}}
           />
         </div>
-        <FormField
-          labelName='Story *'
-          placeholder='Write title story'
-          isTextArea
-          value={form.description}
-          handleChange={()=>{}}
+        <div className='flex w-full'>
+          <FormField
+            labelName='Story *'
+            placeholder='Write title story'
+            isTextArea
+            value={form.description}
+            handleChange={() => {}}
           />
+        </div>
       </form>
     </div>
   )
