@@ -32,35 +32,35 @@ const Navbar = () => {
                 </div>
                 <a className='md:hidden absolute justify-end pr-6 cursor-pointer flex w-full' onClick={handleMenu}>
                     {open ? (<ion-icon name="close-circle-outline"></ion-icon>) : (<ion-icon size="larger" name="menu-outline"></ion-icon>)}
-                    {open ? (<div className='w-[200px] rounded-lg pt-4 pb-2 md:hidden flex flex-col justify-between fixed bottom-6 right-2 h-[360px] bg-[#06123d] shadow-2xl shadow-black '>
+                    {open ? (<div className='w-[200px] rounded-lg pt-4 top-14 pb-2 md:hidden flex flex-col justify-between fixed right-2 h-[360px] bg-[#06123d] shadow-2xl shadow-black '>
                         <div className='w-full h-full flex gap-3 top-0 flex-col'>
                             <a className='flex gap-3 justify-start pl-4'>
                                 <ion-icon size="large" name="grid-outline"></ion-icon>
-                                <p className='text-white text-xl'>Home</p>
+                                <p className='text-white text-[18px]'>Home</p>
                             </a>
                             <a className='flex gap-3 justify-start pl-4'>
                                 <ion-icon name="person-circle-outline"></ion-icon>
-                                <p className='text-white text-xl'>profile</p>
-                            </a>
-                            <a className='flex gap-3 justify-start pl-4'>
-                                <ion-icon name="notifications-circle-outline"></ion-icon>
-                                <p className='text-white text-xl'>Notifications</p>
+                                <p className='text-white text-[18px]'>profile</p>
                             </a>
                             <a className='flex gap-3 justify-start pl-4'>
                                 <ion-icon name="card-outline"></ion-icon>
-                                <p className='text-white text-xl'>Wallet</p>
-                            </a>
-                            <a className='flex gap-3 justify-start pl-4'>
-                                <ion-icon name="settings-outline"></ion-icon>
-                                <p className='text-white text-xl'>Settings</p>
+                                <p className='text-white text-[18px]'>Wallet</p>
                             </a>
                             <a className='flex gap-3 justify-start pl-4'>
                                 <ion-icon name="download-outline"></ion-icon>
-                                <p className='text-white text-xl'>Download</p>
+                                <p className='text-white text-[18px]'>Download</p>
+                            </a>
+                            <a className='flex gap-3 justify-start pl-4'>
+                                <ion-icon name="notifications-circle-outline"></ion-icon>
+                                <p className='text-white text-[18px]'>Notifications</p>
+                            </a>
+                            <a className='flex gap-3 justify-start pl-4'>
+                                <ion-icon name="settings-outline"></ion-icon>
+                                <p className='text-white text-[18px]'>Settings</p>
                             </a>
                             <a className='flex gap-3 justify-start pl-4'>
                                 <ion-icon name="sunny-outline"></ion-icon>
-                                <p className='text-white text-xl'>Dark Mode</p>
+                                <p className='text-white text-[18px]'>Dark Mode</p>
                             </a>
                         </div>
                     </div>) : null}
