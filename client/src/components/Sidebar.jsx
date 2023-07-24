@@ -17,7 +17,7 @@ const Sidebar = () => {
                     <ion-icon name="card-outline"></ion-icon>
                 </a>
                 <a className='flex justify-center'>
-                    <ion-icon name="person-circle-outline"></ion-icon>
+                <ion-icon name="settings-outline"></ion-icon>
                 </a>
                 <a className='flex justify-center'>
                     <ion-icon name="download-outline"></ion-icon>
