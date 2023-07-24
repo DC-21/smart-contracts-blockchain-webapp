@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../images/dice.png';
 import { Link } from 'react-router-dom';
-import Create from '../pages/Create';
 
 const Navbar = () => {
 
@@ -14,9 +12,6 @@ const Navbar = () => {
         <div className='top-0 pt-2 w-full left-0 h-20 sticky'>
             <div className='flex py-4 ml-2 mr-2 rounded-lg justify-between items-center'>
                 <div className='flex items-center md:justify-center justify-between gap-8'>
-                    <div className="w-14 h-4 flex justify-center items-center ml-2">
-                        <img className='rounded border border-[#a4a4d6]' src={logo} alt='logo' />
-                    </div>
                     <div className='md:flex hidden  justify-center items-center'>
                         <input
                             type='text'
