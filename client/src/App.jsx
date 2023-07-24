@@ -10,7 +10,7 @@ import Withdraw from './pages/Withdraw'
 
 const App = () => {
   return (
-    <div className='h-screen w-full bg-[#030b29]'>
+    <div className='h-auto w-full bg-[#030b29]'>
       <Navbar />
       <div>
         <Sidebar />

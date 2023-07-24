@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  font-family: 'Quicksand', sans-serif;
+}
 ion-icon {
   color: rgb(164, 164, 214);
   font-size: 35px;
