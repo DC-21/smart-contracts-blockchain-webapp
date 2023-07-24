@@ -26,8 +26,8 @@ const Navbar = () => {
                         <ion-icon name="logo-firefox"></ion-icon>
                     </div>
                 </div>
-                <a className='md:hidden absolute flex w-full right-0'>
-                <ion-icon name="menu-outline"></ion-icon>
+                <a className='md:hidden absolute justify-end pr-6 cursor-pointer flex w-full'>
+                <ion-icon size="large" name="menu-outline"></ion-icon>
                 </a>
             </div>
         </div>
