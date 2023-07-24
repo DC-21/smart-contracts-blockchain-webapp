@@ -8,19 +8,19 @@ const Sidebar = () => {
                     <ion-icon name="grid-outline"></ion-icon>
                 </a>
                 <a className='flex justify-center'>
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                </a>
+                <a className='flex justify-center'>
+                    <ion-icon name="wallet-outline"></ion-icon>
+                </a>
+                <a className='flex justify-center'>
+                    <ion-icon name="cash-outline"></ion-icon>
+                </a>
+                <a className='flex justify-center'>
                     <ion-icon name="person-circle-outline"></ion-icon>
                 </a>
                 <a className='flex justify-center'>
-                    <ion-icon name="notifications-circle-outline"></ion-icon>
-                </a>
-                <a className='flex justify-center'>
-                    <ion-icon name="card-outline"></ion-icon>
-                </a>
-                <a className='flex justify-center'>
-                <ion-icon name="settings-outline"></ion-icon>
-                </a>
-                <a className='flex justify-center'>
-                    <ion-icon name="download-outline"></ion-icon>
+                    <ion-icon name="log-out-outline"></ion-icon>
                 </a>
             </div>
             <div className='flex w-full flex-col justify-center'>
