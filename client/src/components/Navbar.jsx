@@ -27,7 +27,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <a className='md:hidden absolute justify-end pr-6 cursor-pointer flex w-full'>
-                <ion-icon size="large" name="menu-outline"></ion-icon>
+                <ion-icon size="larger" name="menu-outline"></ion-icon>
                 </a>
             </div>
         </div>
