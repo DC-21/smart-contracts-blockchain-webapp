@@ -50,7 +50,7 @@ const Create = () => {
           <a className='gap-4 bg-[#374674] flex justify-center items-center p-4 rounded-[10px]'>
             <svg
               viewBox="0 0 24 24"
-              fill="currentColor"
+              fill="white"
               height="3.5em"
               width="3.5em"
             >
