@@ -2,7 +2,8 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar'
-import Home from './pages/Home'                                                      '
+import Home from './pages/Home'
+import Create from './pages/Create';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Sidebar />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/create-campaign' element={<Create/>}/>
         </Routes>
       </div>
     </div>
