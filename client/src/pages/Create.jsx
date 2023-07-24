@@ -15,7 +15,7 @@ const Create = () => {
     image: ''
   });
   return (
-    <div className='justify-center items-center flex flex-col rounded-[10px] md:w-[92%] w-full md:h-screen h-auto bg-[#101b42] md:ml-[7%] ml-4 md:mr-[20%] mr-4 mt-3'>
+    <div className='justify-center items-center flex flex-col rounded-[10px] md:w-[92%] w-full md:h-screen h-auto bg-[#101b42] md:ml-[7%] ml-0 md:mr-[7%] mr-0 mt-3'>
       {isLoading && 'Loader...'}
       <div className='bg-[#374674] flex justify-center items-center rounded-[10px] md:mt-6 mt-4 p-[20px]'>
         <h1 className='text-white font-bold leading-[30px] md:text-[35px] sm:text-[16px]'>Start a Campaign</h1>
