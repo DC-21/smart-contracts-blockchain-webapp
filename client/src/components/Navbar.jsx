@@ -4,7 +4,7 @@ import logo from '../images/dice.png';
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
-    const handleMenu =()=>{
+    const handleMenu = () => {
         setOpen(!open);
     };
 
@@ -31,7 +31,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <a className='md:hidden absolute justify-end pr-6 cursor-pointer flex w-full' onClick={handleMenu}>
-                <ion-icon size="larger" name="menu-outline"></ion-icon>
+                    {open ? (<ion-icon size="larger" name="menu-outline"></ion-icon>) : (<ion-icon name="close-circle-outline"></ion-icon>)}
                 </a>
             </div>
         </div>
