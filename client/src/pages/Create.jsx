@@ -72,7 +72,7 @@ const Create = () => {
             labelName='End Date *'
             placeholder='End Date'
             inputType='date'
-            value={form.title}
+            value={form.deadline}
             handleChange={() => { }}
           />
         </div>
