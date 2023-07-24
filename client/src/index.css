@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 ion-icon {
-    color: rgb(164, 164, 214);
-    font-size: 35px;
-    align-items: center;
-  }
+  color: rgb(164, 164, 214);
+  font-size: 35px;
+  align-items: center;
+}
+
