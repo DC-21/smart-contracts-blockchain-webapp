@@ -20,7 +20,7 @@ const Create = () => {
       <div className='bg-[#374674] flex justify-center items-center rounded-[10px] md:mt-6 mt-4 md:p-[20px] p-4'>
         <h1 className='text-white font-bold leading-[30px] md:text-[35px] sm:text-[16px]'>Start a Campaign</h1>
       </div>
-      <form className='w-full flex flex-col mt-6 gap-4'>
+      <form className='w-full flex flex-col mt-6 mb-6 gap-4'>
         <div className='flex flex-wrap gap-4'>
           <FormField
           labelName='Your Name *'

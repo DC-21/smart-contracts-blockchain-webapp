@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Sidebar = () => {
     return (
         <div>
-            <div className="w-14 h-4 flex md:mt-10 mt-6 justify-center items-center ml-5">
+            <div className="w-14 h-4 md:flex absolute md:mt-10 mt-3 justify-center items-center ml-5">
                 <img className='rounded border border-[#a4a4d6]' src={logo} alt='logo' />
             </div>
             <div className='w-16 rounded-lg pt-4 pb-4 md:flex hidden flex-col justify-between sticky top-24 ml-4 h-[540px] bg-[#06123d] shadow-2xl shadow-black'>
