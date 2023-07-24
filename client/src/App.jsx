@@ -11,12 +11,10 @@ import Withdraw from './pages/Withdraw';
 const App = () => {
   return (
     <div className='h-screen flex flex-row w-full bg-[#030b29]'>
-      <div className='relative flex'>
-        <Sidebar />
-      </div>
+      <Sidebar />
       <div className='flex flex-col flex-1 overflow-hidden'>
         <Navbar />
-        <div className='flex-1 overflow-y-auto p-4'>
+        <div className='flex flex-col flex-1 overflow-y-auto p-4'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/payment' element={<Payment />} />
