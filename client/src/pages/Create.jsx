@@ -92,7 +92,7 @@ const Create = () => {
           />
         </div>
         <div className='justify-center w-full flex items-center'>
-          <a onClick={handleSubmit} className='gap-4 bg-[#374674] flex justify-center items-center p-4 rounded-[10px]'>
+          <a onClick={handleSubmit} className='gap-4 cursor-pointer bg-[#374674] flex justify-center items-center p-4 rounded-[10px]'>
             <p className='font-bold text-[28px] text-white'>Submit new campaign</p>
           </a>
         </div>
