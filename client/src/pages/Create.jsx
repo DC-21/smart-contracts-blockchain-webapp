@@ -16,7 +16,10 @@ const Create = () => {
   }); const handleFieldFormChange = (fieldName,e)=>{
     setForm({...form,[fieldName]:e.target.value})
   }
-  const handleSubmit =()=>{}
+  const handleSubmit =(e)=>{
+    e.preventDefault();
+    console.log(form);
+  }
   return (
     <div className='justify-center items-center flex flex-col rounded-[10px] w-full h-auto bg-[#101b42]'>
       {isLoading && 'Loader...'}
@@ -80,7 +83,7 @@ const Create = () => {
           />
         </div>
         <div className='justify-center w-full flex items-center'>
-          <a className='gap-4 bg-[#374674] flex justify-center items-center p-4 rounded-[10px]'>
+          <a onClick={handleSubmit} className='gap-4 bg-[#374674] flex justify-center items-center p-4 rounded-[10px]'>
             <p className='font-bold text-[28px] text-white'>Submit new campaign</p>
           </a>
         </div>
