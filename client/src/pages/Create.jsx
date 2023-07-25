@@ -82,6 +82,15 @@ const Create = () => {
             handleChange={(e) => handleFieldFormChange('deadline',e)}
           />
         </div>
+        <div>
+        <FormField
+            labelName='Campaign Image *'
+            placeholder='Place Image URL Of campaign'
+            inputType='url'
+            value={form.image}
+            handleChange={(e) => handleFieldFormChange('image',e)}
+          />
+        </div>
         <div className='justify-center w-full flex items-center'>
           <a onClick={handleSubmit} className='gap-4 bg-[#374674] flex justify-center items-center p-4 rounded-[10px]'>
             <p className='font-bold text-[28px] text-white'>Submit new campaign</p>
