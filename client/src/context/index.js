@@ -1,4 +1,4 @@
-import React, { useContext, createContext } from 'react';
+import React, { useContext, createContext, Children } from 'react';
 import { useAddress, useContract, useMetamask, useContractWrite } from '@thirdweb-dev/react';
 import { ethers } from 'ethers';
 
@@ -27,4 +27,14 @@ export const StateContextProvider = ({ children }) => {
             console.log("contract call failure", error)
         }
     }
+    return (
+        <StateContext.Provider value={{
+            address, contract, createCampaign: publishCampaign,
+        }}>
+
+            {children}
+        </StateContext.Provider>
+    )
 }
+
+export const useStateContext = ()=> useContext(StateContext);
