@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
 
 const Navbar = () => {
 
@@ -26,6 +27,7 @@ const Navbar = () => {
                     <div className="flex-none w-14 flex justify-center  items-center">
                         <ion-icon name="logo-firefox"></ion-icon>
                     </div>
+                        <button className='bg-[#172554] text-white py-2 rounded-md px-2 border border-[#a4a4d6]'>Connect</button>
                 </div>
                 <a className='md:hidden absolute justify-end pr-6 top-4 cursor-pointer flex w-full' onClick={handleMenu}>
                     {open ? (<ion-icon name="close-circle-outline"></ion-icon>) : (<ion-icon size="larger" name="menu-outline"></ion-icon>)}

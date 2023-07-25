@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import FormField from '../components/FormField';
+import { useStateContext } from '../context';
 import { ethers } from 'ethers';
 
 const Create = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
+  const { createCampaign } = useStateContext();
   const [form, setForm] = useState({
     name: '',
     title: '',
@@ -16,8 +18,11 @@ const Create = () => {
   }); const handleFieldFormChange = (fieldName,e)=>{
     setForm({...form,[fieldName]:e.target.value})
   }
-  const handleSubmit =(e)=>{
+  const handleSubmit = async (e)=>{
     e.preventDefault();
+    await createCampaign({...form, target: ethers.utils.parseUnits(form.target, 18)})
+    setIsLoading(false);
+    navigate('/');
     console.log(form);
   }
   return (
